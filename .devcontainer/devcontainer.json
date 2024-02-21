@@ -1,12 +1,17 @@
 {
-    "features": {
-        "ghcr.io/robbert229/devcontainer-features/postgresql-client:1": {},
-        "ghcr.io/itsmechlark/features/postgresql:1": {
-            {
-                "POSTGRES_USER": "kcat",
-                "POSTGRES_PASSWORD": "123123"
-            }
+    "services": {
+        "postgres": {
+          "image": "postgres:latest",
+          "env": {
+            "POSTGRES_USER": "your_user",
+            "POSTGRES_PASSWORD": "your_password",
+            "POSTGRES_DB": "your_database"
+          },
+          "ports": ["5432:5432"]
         },
-        "ghcr.io/itsmechlark/features/redis-server:1": {}
-    }
+        "redis": {
+          "image": "redis:latest",
+          "ports": ["6379:6379"]
+        }
+      }
 }
