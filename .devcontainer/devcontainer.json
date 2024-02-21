@@ -3,7 +3,7 @@
         "ghcr.io/robbert229/devcontainer-features/postgresql-client:1": {},
         "ghcr.io/itsmechlark/features/postgresql:1": {
             "env": {
-                "POSTGRES_USER": "your_user",
+                "POSTGRES_USER": "kcat",
                 "POSTGRES_PASSWORD": "123123"
             }
         },
