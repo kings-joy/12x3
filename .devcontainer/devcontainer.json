@@ -1,4 +1,16 @@
 {
-    
-  }
+    "forwardPorts": [5432, 6379],
+    "features": {
+      "ghcr.io/itsmechlark/features/postgresql:1": {
+        "databaseName": "medusa-starter-default",
+        "postgis": false,
+        "locale": "en_US.UTF-8",
+        "initCommands": [
+          "CREATE USER kcat WITH PASSWORD '123123';",
+          "ALTER USER kcat WITH SUPERUSER;"
+        ]
+      },
+      "ghcr.io/itsmechlark/features/redis-server:1": {}
+    }
+}
   
