@@ -1,6 +1,5 @@
 {
     "name": "my-project-devcontainer",
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "forwardPorts": [5432, 6379],
     "features": {
       "ghcr.io/itsmechlark/features/postgresql:1": {
