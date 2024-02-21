@@ -7,7 +7,7 @@
         "locale": "en_US.UTF-8",
         "initCommands": [
           "CREATE USER kcat WITH PASSWORD '123123';",
-          "ALTER USER your_user WITH SUPERUSER;"
+          "ALTER USER kcat WITH SUPERUSER;"
         ]
       },
       "ghcr.io/itsmechlark/features/redis-server:1": {}
