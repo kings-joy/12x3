@@ -1,7 +1,12 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/universal:2",
-    "features": {
-      "ghcr.io/itsmechlark/features/postgresql:1": {},
-      "ghcr.io/itsmechlark/features/redis-server:1": {}
-    }
+    "name": "Medusa.js Dev Container",
+    "dockerFile": "Dockerfile",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [],
+    "forwardPorts": [7001], // Change this to the port your Medusa.js backend uses
+    "postCreateCommand": "yarn install && yarn start",
+    "remoteUser": "codespace",
+    "workspaceMount": "source=/workspace,target=/workspace,type=bind,consistency=cached"
   }
