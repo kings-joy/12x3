@@ -1,6 +1,4 @@
 {
-    "name": "medusa js backend",
-    "image": "medusa backend",
     "forwardPorts": [5432, 6379],
     "features": {
       "ghcr.io/microsoft/vscode-dev-containers/postgresql:latest": {
