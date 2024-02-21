@@ -5,7 +5,7 @@
       "terminal.integrated.shell.linux": "/bin/bash"
     },
     "extensions": [],
-    "forwardPorts": [7001], // Change this to the port your Medusa.js backend uses
+    "forwardPorts": [9000], // Change this to the port your Medusa.js backend uses
     "postCreateCommand": "yarn install && yarn start",
     "remoteUser": "codespace",
     "workspaceMount": "source=/workspace,target=/workspace,type=bind,consistency=cached"
