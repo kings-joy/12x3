@@ -1,7 +1,7 @@
 {
     "forwardPorts": [5432, 6379],
     "features": {
-      "ghcr.io/microsoft/vscode-dev-containers/postgresql:latest": {
+      "ghcr.io/itsmechlark/features/postgresql:1": {
         "databaseName": "medusa-starter-default",
         "postgis": false,
         "locale": "en_US.UTF-8",
@@ -10,7 +10,7 @@
           "ALTER USER your_user WITH SUPERUSER;"
         ]
       },
-      "ghcr.io/microsoft/vscode-dev-containers/redis:latest": {}
+      "ghcr.io/itsmechlark/features/redis-server:1": {}
     }
   }
   
