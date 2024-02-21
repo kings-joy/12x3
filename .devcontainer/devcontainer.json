@@ -3,7 +3,7 @@
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "forwardPorts": [5432, 6379],
     "features": {
-      "ghcr.io/devcontainers-contrib/features/postgres-asdf:1": {
+      "ghcr.io/itsmechlark/features/postgresql:1": {
         "databaseName": "medusa-starter-default",
         "postgis": false,
         "locale": "en_US.UTF-8",
