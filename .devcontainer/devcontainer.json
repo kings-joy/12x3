@@ -7,7 +7,7 @@
         "postgis": false,
         "locale": "en_US.UTF-8",
         "initCommands": [
-          "CREATE USER kcat WITH PASSWORD '123123';",
+          "CREATE USER kcat WITH PASSWORD 'test';",
           "ALTER USER kcat WITH SUPERUSER;"
         ]
       },
