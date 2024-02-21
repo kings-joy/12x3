@@ -1,17 +1,18 @@
 {
-    "services": {
-        "postgres": {
-          "image": "postgres:latest",
-          "env": {
-            "POSTGRES_USER": "kcat",
-            "POSTGRES_PASSWORD": "123123",
-            "POSTGRES_DB": "medusa-starter-default"
-          },
-          "ports": ["5432:5432"]
-        },
-        "redis": {
-          "image": "redis:latest",
-          "ports": ["6379:6379"]
-        }
-      }
-}
+    "name": "medusa js backend",
+    "image": "medusa backend",
+    "forwardPorts": [5432, 6379],
+    "features": {
+      "ghcr.io/microsoft/vscode-dev-containers/postgresql:latest": {
+        "databaseName": "medusa-starter-default",
+        "postgis": false,
+        "locale": "en_US.UTF-8",
+        "initCommands": [
+          "CREATE USER kcat WITH PASSWORD '123123';",
+          "ALTER USER your_user WITH SUPERUSER;"
+        ]
+      },
+      "ghcr.io/microsoft/vscode-dev-containers/redis:latest": {}
+    }
+  }
+  
