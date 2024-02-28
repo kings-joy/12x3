@@ -15,6 +15,7 @@ medusa develop
 
 # check background
 You can check if backend is installed correclty by doing this command in your terminal. 
+
 curl localhost:9000/store/products
 
 And the result will be displayed as a Json formats.
