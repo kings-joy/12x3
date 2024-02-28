@@ -12,6 +12,11 @@ switch (process.env.NODE_ENV) {
     ENV_FILE_NAME = ".env.test";
     break;
   case "development":
+    ENV_FILE_NAME = ".env.development";
+    break;
+  case "codespace":
+    ENV_FILE_NAME = ".env.codespace";
+    break;
   default:
     ENV_FILE_NAME = ".env";
     break;
@@ -29,7 +34,7 @@ const ADMIN_CORS =
 const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
 
 const DATABASE_URL =
-  process.env.DATABASE_URL || "postgres://kcat:test@localhost/medusa-starter-default";
+  process.env.DATABASE_URL || "postgres://kcat:test@localhost:5432/medusa-starter-default";
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
