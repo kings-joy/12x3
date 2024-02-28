@@ -16,11 +16,9 @@
 		}
 	},
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// This can be used to network with other containers or with the host.
-	// "forwardPorts": [3000, 5432],
+	"forwardPorts": [5432],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": ["npm install @medusajs/medusa-cli -g","medusa migrations run"],
+	"postCreateCommand": ["npm install","npm install @medusajs/medusa-cli -g","medusa migrations run", "medusa seed --seed-file=data/seed.json", "medusa develop"],
 	"remoteUser": "node"
 }
