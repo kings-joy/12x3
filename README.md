@@ -11,7 +11,8 @@ medusa migrations run
 
 medusa seed --seed-file=data/seed.json
 
-medusa develop
+medusa develop (for development on local)
+medusa start (for development on codespace or production)
 
 # check background
 You can check if backend is installed correclty by doing this command in your terminal. 
