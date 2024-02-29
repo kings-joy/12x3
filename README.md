@@ -7,7 +7,7 @@ npm install
 npm install @medusajs/medusa-cli -g
 medusa migrations run
 medusa seed --seed-file=data/seed.json
-medusa develop
+medusa start
 
 # check background
 You can check if backend is installed correclty by doing this command in your terminal. 
