@@ -79,11 +79,10 @@ const plugins = [
         stats: "normal",
         allowedHosts: "auto",
         webSocketURL: undefined,
-      develop: {
         open: process.env.OPEN_BROWSER !== "false",
       },
     },
-  },
+  }
 ];
 
 const modules = {
