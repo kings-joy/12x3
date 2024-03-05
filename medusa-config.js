@@ -33,13 +33,11 @@ const ADMIN_CORS =
 
 const MEDUSA_BACKEND_URL =
 process.env.MEDUSA_BACKEND_URL || "http://localhost:9000";
-console.log
 const MEDUSA_ADMIN_BACKEND_URL =
 process.env.MEDUSA_ADMIN_BACKEND_URL || "http://localhost:9000";
 
 // CORS to avoid issues when consuming Medusa from a client
 const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
-console.log('admin', process.env.ADMIN_CORS)
 const DATABASE_URL =
   process.env.DATABASE_URL || "postgres://kcat:test@localhost:5432/medusa-starter-default";
 
