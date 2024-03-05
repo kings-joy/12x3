@@ -67,6 +67,18 @@ const plugins = [
     options: {
       autoRebuild: true,
       // serve: process.env.NODE_ENV === "development",
+      serve: true,
+      autoRebuild: true,
+      backend: "https://seal-app-aqdpj.ondigitalocean.app",
+      path: "/app",
+      outDir: "build",
+      develop: {
+        open: true,
+        port: 7001,
+        logLevel: "error",
+        stats: "normal",
+        allowedHosts: "auto",
+        webSocketURL: undefined,
       develop: {
         open: process.env.OPEN_BROWSER !== "false",
       },
