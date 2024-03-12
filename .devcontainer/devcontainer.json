@@ -16,9 +16,9 @@
 		}
 	},
 
-	"forwardPorts": [5432],
+	"forwardPorts": 5432,
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": ["npm install","npm install @medusajs/medusa-cli -g","medusa migrations run", "medusa seed --seed-file=data/seed.json", "medusa develop"],
+	"postCreateCommand": ["npm install","npm install @medusajs/medusa-cli -g","medusa migrations run", "medusa seed --seed-file=data/seed.json", "medusa start"],
 	"remoteUser": "node"
 }
