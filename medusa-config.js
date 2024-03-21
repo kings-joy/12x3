@@ -46,9 +46,10 @@ const DB_HOST = process.env.DB_HOST
 const DB_PORT = process.env.DB_PORT
 const DB_DATABASE = process.env.DB_DATABASE
 
-const DATABASE_URL = 
-  `postgres://${DB_USERNAME}:${DB_PASSWORD}` + 
-  `@${DB_HOST}:${DB_PORT}/${DB_DATABASE}`
+// const DATABASE_URL = 
+//   `postgres://${DB_USERNAME}:${DB_PASSWORD}` + 
+//   `@${DB_HOST}:${DB_PORT}/${DB_DATABASE}`
+const DATABASE_URL = "postgresql://medusa-starter-default:AVNS_rUiIp0VUYm-9mNwbRXx@app-d53fbc14-a533-4750-b328-f2e3c05bb217-do-user-15872751-0.c.db.ondigitalocean.com:25060/medusa-starter-default?sslmode=require"
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
